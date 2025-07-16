@@ -1,4 +1,4 @@
-body {
+ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f4f8;
   margin: 0;
@@ -20,10 +20,9 @@ header {
 .content {
   display: flex;
   flex-direction: column;
-  align-intems: center;
+  align-items: center;
   margin-top: 30px;
   text-align: center;
-  margin-top: 30px;
 }
 
 img {
@@ -44,7 +43,7 @@ button {
 }
 
 button:hover {
-  background-color: #f0f8f1;
+  background-color: #e0f0e5;
 }
 
 footer {
