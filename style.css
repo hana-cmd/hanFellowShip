@@ -1,4 +1,5 @@
- body {
+/* ==== GLOBAL RESET & BODY ==== */
+body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f4f8;
   margin: 0;
@@ -6,6 +7,7 @@
   text-align: center;
 }
 
+/* ==== HEADER ==== */
 header {
   padding: 40px;
   background-color: #ffffff;
@@ -13,24 +15,27 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* ==== HERO SECTION ==== */
 .hero {
   margin-top: 30px;
 }
 
-.content {
+/* ==== CONTENT CONTAINER ==== */
+.hero .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  text-align: center;
 }
 
+/* ==== IMAGE ==== */
 img {
   width: 250px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ==== BUTTON ==== */
 button {
   margin-top: 20px;
   padding: 10px 24px;
@@ -40,12 +45,14 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #e3ac20;
+  background-color: #c78f17;
 }
 
+/* ==== FOOTER ==== */
 footer {
   margin-top: 40px;
   padding: 10px;
