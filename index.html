@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HanFellowShip ✨</title>
+  <title>Pdt.Johannes BB - Ev. Sarida ✨</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    const dark = () => document.body.classList.toggle('dark');
+    if(localStorage.theme === 'dark') {
+      dark(); btn.textContent = '☀️';
+    }
+    btn.onclick = () => {
+      dark();
+      const isDark = document.body.classList.contains('dark');
+      localStorage.theme = isDark ? 'dark' : 'light';
+      btn.textContent = isDark ? '☀️' : '🌙';
+    };
+  </script>
+
   <nav class="navbar">
-     <a href="index.html" class="logo"><h2>FellowShip</h2></a>
+     <a href="index.html" class="logo"><h2>Pdt.Johannes BB - Ev. Sarida</h2></a>
     <ul class="nav-menu">
       <li><a href="ibadah.html">Ibadah</a></li>
       <li><a href="kegiatan.html">Kegiatan</a></li>
@@ -24,11 +39,12 @@
   </nav>
 
   <header class="dashboard-header">
-    <img src="img/2.jpg" alt="Banner HKBP" />
+    <img src="img/1.jpg" alt="Banner HKBP" />
     <h1>Fellow Ship HKBP Letare ✨</h1>
     <p>Selamat Datang di Gereja HKBP Letare</p>
     <button onclick="alert('Selamat datang!')">Masuk Dashboard</button>
   </header>
+  
 
   <section id="daerah-ciledug">
   <h2>Daerah Banten</h2>
