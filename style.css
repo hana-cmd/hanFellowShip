@@ -5,6 +5,11 @@ body {
   text-align: center;
 }
 
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
 .dashboard-header {
   background-color: #ffffff;
   padding: 50px 20px;
@@ -12,12 +17,11 @@ body {
 }
 
 .dashboard-header img {
-  width: 9000px;
-  max-width: 600px;
-  height: auto;
-  border-radius: 30px;
-  margin-bottom: 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;        /* membuat gambar selebar kontainer */
+  max-height: none;  /* batasi tinggi maksimal (bisa kamu ubah jadi 600px atau 700px) */
+  object-fit: cover;  /* membuat gambar tetap proporsional */
+  border-radius: 16px; /* opsional: bikin sudutnya membulat */
+  margin-bottom: 16px;
 }
 
 .dashboard-header h1 {
